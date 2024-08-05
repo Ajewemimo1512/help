@@ -1,0 +1,10 @@
+<form action="http://postmail.invotes.com/send" method="post" id="email_form">
+  <input type="text" name="subject" placeholder="Subject" />
+  <textarea name="text" placeholder="Message"></textarea>
+  <input type="hidden" name="access_token" value="abc123" />
+
+  <input type="hidden" name="success_url" value="." />
+  <input type="hidden" name="error_url" value=".?err=1" />
+
+  <input id="submit_form" type="submit" value="Send" />
+</form>

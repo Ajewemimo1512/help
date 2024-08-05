@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPORTY</title>
+  </head>
+  <body>
+    <style>
+      h3 {
+        color: rgb(11, 14, 13);
+        padding: 20spx;
+        font-size: 55px;
+        text-align: center;
+      }
+      #hey {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      div {
+        background-color: whitesmoke;
+      }
+      .hd,
+      h1,
+      #hey {
+        font-size: 100px;
+      }
+    </style>
+
+    <div>
+      <h1 id="hey">🃏OKER APE ROADMAP</h1>
+      <center><h2 class="hd">Phase 1</h2></center>
+      <h3>
+        We will deploy social media channels, discord and marketing to ensure
+        the project gets the attention it deserves including hiring community
+        managers and securing celebrity endorsments to back the project
+      </h3>
+    </div>
+
+    <div>
+      <center><h2 class="hd">Phase 2</h2></center>
+      <h3>
+        We will launch various giveaway campaign to grow our social media
+        following and Discord channel. As a community we want to incentivize
+        everyone to get involveed for the future success of the project. Put in
+        the work and with a bit of luck perphaps you'll hit one o the jackpots
+      </h3>
+    </div>
+
+    <div>
+      <center><h2 class="hd">Phase 3</h2></center>
+      <h3>
+        Once we establish solid community numbers we will reveal all of the
+        details for our BIG launch! Including mint price, quantity available,
+        date, time and more. We will give whitelist holders a chance to mint
+        early. You'll want to make sure you're able to claim a whitelist spot so
+        that you don't miss out. We are aiming for an affordable mint price and
+        a supply that makes 🃏OKER 🦧 rare !
+      </h3>
+    </div>
+  </body>
+</html>

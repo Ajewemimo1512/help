@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>acecoding</title>
+  </head>
+  <body>
+
+ 
+<link rel="stylesheet" href="newstyle.css">
+
+
+
+ 
+
+ <div id="head" > <h1>To make a perfect sale on clothing brand and available all details</h1>
+  <h2 >Stay tuned to keep getting updates and bulletins
+  </h2>
+  <br><h2 id="small" class="fourh" >outwardly becoming relevant on our socio medium </h2>
+ <hr> <h2 id="big"> <span style="color: violet;" >TIME</span> IS HERE </h2>
+ <BR><h2>time is here stay tuned ...</h2>
+<h2> <span id="az">updates</span>  rolling out </h2></BR>
+
+
+</div>
+  
+   <div id="az">
+       
+    <a href="http://www.netnaija.com" class="" ><img src="./aaa.jpg" alt="" srcset="" /> edr</a> 
+    <form action="https://www.google.com" method="get">
+      <input type="text" name="q" id="zx" />
+      <input type="date" name="qa" id="big">
+      <button><input type="submit" value="connect" /></button>
+    
+    
+    </div>
+   
+   
+
+   
+   
+   
+    </form>
+  </body>
+</html>

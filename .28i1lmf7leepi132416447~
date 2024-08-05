@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <b style="background-color: aqua; border-radius: 5em; padding: 0.3em 0.5em;">This is the beginning of <a href=""> programming</a></b>  journey for 
+    <font color="red" size="50" > az</font>
+  
+    
+</body>
+</html>

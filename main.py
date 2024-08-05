@@ -1,0 +1,52 @@
+from flask import Flask, redirect, render_template, request, url_for
+
+app = Flask(__name__)
+
+
+@app.route("/")
+@app.route("/index.html")
+def home():
+    if request.args.get("message"):
+        return redirect(url_for("notfound"))
+    elif request.args.get("message1"):
+        return redirect(url_for("new"))
+    return render_template("home.html")
+
+
+@app.route("/confirm")
+def new():
+    return render_template("confirm.html")
+
+
+@app.route("/menu.html")
+def sample():
+    return render_template("menu.html")
+
+
+@app.route("/walletpage.html")
+def wallet():
+
+    return render_template("walletpage.html")
+
+
+@app.route("/formpage.html")
+def wrong():
+    return render_template("formpage.html")
+
+
+@app.route("/qrcode.html")
+def notfound():
+    return render_template("qrcode.html")
+
+
+# @app.route("/qr")
+# def qr():
+#     return render_template("qr.html")
+# ♻️
+
+# if __name__ == "__main__":
+#   app.run(host="0.0.0.0", port=8080)
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)

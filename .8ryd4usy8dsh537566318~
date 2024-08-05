@@ -1,0 +1,16 @@
+#big {
+  font-size: 100px;
+}
+#small {
+  font-size: small;
+  color: #f06617;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fourh,
+#dog,
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

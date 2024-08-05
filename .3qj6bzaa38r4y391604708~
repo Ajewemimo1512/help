@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Dappconnet | Blockchain wallet connection and management protocol
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="./static/static/vendor/icons/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/static/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/static/vendor/jquery/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="/static/static/docs/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="/static/static/vendor/fonts/fontawesome-webfont.svg"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="/static/static/images/dapp_logo.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css-1?family=Ubuntu|Lato|Roboto|Source%20Sans%20Pro"
+    />
+  </head>
+
+  <body>
+    <div
+      class="container fix-mt fix-mtSm"
+      style="font-family: 'roboto'; padding-bottom: 60px"
+    >
+      <div class="mt-100 row">
+        <div class="col-12 col-md-8">
+          <h3 class="site-blue monstText"><b>Registry</b></h3>
+          <p>Wallet and Apps supporting the wallet connect protocol</p>
+          <p class="greyBlack">Select wallet to proceed</p>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="form-group mt-2">
+            <input
+              type="search"
+              id="searchWallet"
+              class="form-control"
+              placeholder="Search wallets, Dapps, Chains"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-50">
+        <div class="col-md-3 d-none d-sm-block"></div>
+        <div class="col-12 col-md-9">
+          <div class="row">
+            <div class="col-md-4 col-6 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Metamask')"
+              >
+                <img
+                  src="/static/static/images/dapps/metamask.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>MetaMask</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Atomic Wallet')"
+              >
+                <img
+                  src="./static/static/images/dapps/atomic.jpg"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Atomic Wallet</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Safepal')"
+              >
+                <img
+                  src="/static/static/images/dapps/safepal.jpg"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Safepal</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'TrustWallet')"
+              >
+                <img
+                  src="/static/static/images/dapps/trust-wallet.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>TrustWallet</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Opensea')"
+              >
+                <img
+                  src="/static/static/images/dapps/opensea.jpg"
+                  alt="metamask"
+                  style="width: 80px; height: 50px"
+                /><br />
+                <small>Opensea</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Coinbase Wallet')"
+              >
+                <img
+                  src="/static/static/images/dapps/coinbase.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Coinbase Wallet</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'WalletConnect')"
+              >
+                <img
+                  src="/static/static/images/dapps/walletConnect.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>WalletConnect</small>
+              </div>
+            </div>
+            <!-- = -->
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Trezor')"
+              >
+                <img
+                  src="/static/static/images/dapps/trezor.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Trezor</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Fortmatic')"
+              >
+                <img
+                  src="/static/static/images/dapps/fortmatic.jpg"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Fortmatic</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Ledger')"
+              >
+                <img
+                  src="/static/static/images/dapps/ledger.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Ledger</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'TokenPocket')"
+              >
+                <img
+                  src="/static/static/images/dapps/tokenPocket.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>TokenPocket</small>
+              </div>
+            </div>
+            <!-- # -->
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Math wallet')"
+              >
+                <img
+                  src="/static/static/images/dapps/mathWallet.jpg"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Math wallet</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Tomo chain')"
+              >
+                <img
+                  src="/static/static/images/dapps/tomochain.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Tomo Chain</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Portis')"
+              >
+                <img
+                  src="/static/static/images/dapps/portis.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Portis</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Squarelink')"
+              >
+                <img
+                  src="/static/static/images/dapps/squarelink.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Squarelink</small>
+              </div>
+            </div>
+            <!-- ## -->
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Torus')"
+              >
+                <img
+                  src="/static/static/images/dapps/torus.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Torus</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Terrastaion')"
+              >
+                <img
+                  src="/static/terrass.jpeg"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Terrastaion</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Scatter Wallet')"
+              >
+                <img
+                  src="/static/static/images/dapps/scatterwallet.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Scatter Wallet</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Crypto.com')"
+              >
+                <img
+                  src="/static/static/images/dapps/crypto.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Crypto.com</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'VeChain')"
+              >
+                <img
+                  src="/static/static/images/dapps/vechain.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>VeChain</small>
+              </div>
+            </div>
+            <!-- # -->
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Binance smart chain')"
+              >
+                <img
+                  src="/static/static/images/dapps/binance.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Binance smart chain</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div
+                class="shadow2 p-4 align-center"
+                style="border-radius: 8px"
+                onclick="connectWallet(this,'Exodus')"
+              >
+                <img
+                  src="/static/static/images/dapps/exodus.png"
+                  alt="metamask"
+                  style="width: 50px; height: 50px"
+                /><br />
+                <small>Exodus</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3 wallets pointer">
+              <div class="shadow2 p-3 align-center" style="border-radius: 8px">
+                <a href="/connect">
+                  <h5 class="reduceH5 greenText">
+                    Others &nbsp; <i class="fa fa-arrow-right"></i>
+                  </h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="connectWallet"
+      tabindex="-1"
+      aria-labelledby="connectWallet"
+      aria-hidden="true"
+      data-keyboard="false"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div
+          class="modal-content mx-4"
+          style="background: none; border: none; font-family: roboto"
+        >
+          <div
+            class="modal-body white-bg px-50 mx-auto"
+            style="width: fit-content; border-radius: 8px"
+          >
+            <div class="align-center" id="requestResponse">
+              <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <h5 class="reduceH5">
+                <img
+                  src="#"
+                  alt=""
+                  style="width: 20px; height: 20px; border-radius: 2px"
+                  id="walletImage"
+                />
+                <b id="walletName"></b>
+              </h5>
+              <div class="mt-3">
+                <small class="site-blue" style="font-weight: bold">
+                  Connecting ... Please wait
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/static/vendor/jquery/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#searchWallet").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $(".wallets").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+    <script>
+      const endRequest = () => {
+        $("#connectWallet").modal("hide");
+        $("#requestResponse").html(
+          `
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                <h5 class="reduceH5">
+                    <img src="" alt="" style="width: 20px; height: 20px; border-radius: 4px;" id="walletImage">
+                    <b id="walletName"></b>
+                </h5>
+                <div class="mt-3">
+                    <small class="site-blue" style="font-weight: bold;">
+                        Connecting ... Please wait
+                    </small>
+                </div>
+                `
+        );
+      };
+    </script>
+
+    <script>
+      const connectWallet = (e, walletName) => {
+        wallet = $(e).find("small")[0];
+        walletImage = $(e).find("img")[0];
+        $("#walletName").html($(wallet).text());
+        $("#walletImage").prop("src", walletImage.src);
+        $("#connectWallet").modal("show");
+
+        setTimeout(function () {
+          $("#requestResponse").html(
+            `
+                <div class="py-2">
+                    <h5 style="font-weight:bold">Request Timeout!</h5>
+                    <p class="greyBlack">
+                        Error establishing connection
+                    </p>
+                    <div class="mt-4">
+                        <a href="/connect?wallet=` +
+              walletName +
+              `">
+                            <button class="btn px-4 btn-hover" style="width: fit-content;">
+                                Connect manually
+                            </button>
+                        </a>
+                    </div>
+                    <div class="mt-4 align-center">
+                        <h5 class="reduceH5 greyBlack" onclick="endRequest()"><b>Cancel</b></h5>
+                    </div>
+                </div>
+                `
+          );
+        }, 6000);
+      };
+    </script>
+
+    <!-- jS -->
+    <script src="/static/static/vendor/jquery/jquery.js"></script>
+    <script src="/static/static/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/static/static/vendor/jquery/jquery-ui.min.js"></script>
+
+    <!-- Toggle Nav bar -->
+    <script>
+      const showNavBarMobile = () => {
+        $(".mobile-nav-body").show("slide", { direction: "up" }, 200);
+        $("#toggleBtn").attr("onclick", "hideNavBarMobile(this)");
+        $(".overlayDiv").fadeIn(100);
+      };
+      const hideNavBarMobile = () => {
+        $(".mobile-nav-body").hide("slide", { direction: "up" }, 200);
+        $("#toggleBtn").attr("onclick", "showNavBarMobile(this)");
+        $(".overlayDiv").fadeOut(100);
+      };
+    </script>
+  </body>
+
+  <!-- Mirrored from dappconnet.com/registry%3Ftype=wallet by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Apr 2022 19:30:24 GMT -->
+</html>
